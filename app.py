@@ -622,15 +622,15 @@ if not st.session_state.logged_in:
     if st.button("Login"):
         if username == USERNAME and password == PASSWORD:
             st.session_state.logged_in = True
-            st.success("✅ Login successful!")
+            st.success("Login successful!")
             st.rerun()
         else:
-            st.error("❌ Invalid username or password")
+            st.error("Invalid username or password")
 
     st.stop()  # Stop rest of the app until login
 else:
     # --- Show Dashboard after Login ---
-    st.sidebar.success(f"👋 Logged in as: {USERNAME}")
+    st.sidebar.success(f"Logged in as: {USERNAME}")
     st.sidebar.button("Logout", on_click=logout)
 
 import streamlit as st
@@ -638,7 +638,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Hospital Admission Trends And Bed Occupancy")
+st.title("Hospital Admission Trends And Bed Occupancy Analysis")
 st.sidebar.header("Dashboard Controls")
 
 # Example: load dataset
@@ -658,6 +658,7 @@ if uploaded_file is not None:
 
 
 # In[ ]:
+
 
 
 
