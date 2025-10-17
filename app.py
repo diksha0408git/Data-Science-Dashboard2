@@ -638,7 +638,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Data Science Project Dashboard")
+st.title("Hospital Admission Trends And Bed Occupancy")
 st.sidebar.header("Dashboard Controls")
 
 # Example: load dataset
@@ -658,6 +658,7 @@ if uploaded_file is not None:
 
 
 # In[ ]:
+
 
 
 
